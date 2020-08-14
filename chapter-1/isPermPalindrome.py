@@ -30,7 +30,7 @@ def check_max_one_odd(table):
     return True
 
 
-# optimization
+# optimization by creating char_freq_table and counting num_odds simultaneously
 def check_max_one_odd_optimized(string):
     char_frequency_table = defaultdict(int)
     num_odds = 0
@@ -43,6 +43,9 @@ def check_max_one_odd_optimized(string):
             num_odds -= 1
 
     return num_odds <= 1
+
+
+# TODO: optimization by using a bit vector which maps a character to an integer
 
 
 def test_is_perm_palindrome():
