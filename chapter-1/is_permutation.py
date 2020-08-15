@@ -2,7 +2,7 @@ import pytest
 from collections import defaultdict
 
 # O(N)
-def isPermutation(str_a, str_b):
+def is_permutation(str_a, str_b):
     if len(str_a) != len(str_b):
         return False
 
@@ -20,7 +20,7 @@ def isPermutation(str_a, str_b):
 
 
 def test_is_permutation():
-    assert isPermutation('abc', 'cab') == True
-    assert isPermutation('ab c', 'c ab') == True
-    assert isPermutation('abc', 'Cab') == False
-    assert isPermutation('ab c', 'cab') == False
+    assert is_permutation('abc', 'cab') == True
+    assert is_permutation('ab c', 'c ab') == True
+    assert is_permutation('abc', 'Cab') == False
+    assert is_permutation('ab c', 'cab') == False

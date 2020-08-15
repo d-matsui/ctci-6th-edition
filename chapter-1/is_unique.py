@@ -1,7 +1,7 @@
 import pytest
 
 
-def isUnique(string):
+def is_unique(string):
     # assume character set is ASCCI (128 characters)
     if len(string) > 128:
         return False
@@ -17,6 +17,6 @@ def isUnique(string):
     return True
 
 
-def test_isUnique():
-    assert isUnique('abc') == True
-    assert isUnique('abca') == False
+def test_is_unique():
+    assert is_unique('abc') == True
+    assert is_unique('abca') == False
